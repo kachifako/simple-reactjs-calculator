@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.container{
+  margin: 10% auto;
+  width: 350px;
+  border-radius: 15px;
+  background-color: #faf9f9;
+  box-shadow: -1px 8px 15px 3px #b8b7b7;
+  height: fit-content;
+  padding: 1%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.display{
+  width: 97%;
+  height: 200px;
+ margin: 5% 1.5%;
+  border: 1px;
+  border-radius: 5px;
+  color: #810909;
+  overflow: auto;
+  background-color: #bababa;
+  box-shadow: inset 0px 5px 8px  #706b6b;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+  word-wrap: break-word;
+  word-break: break-all;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+span{
+  align-self: flex-end;
+ font-size: x-large;
+   text-align: right;
+}
+
+.results{
+  padding: 2%;
+  font-size: xx-large;
+  opacity: 0.5;
+}
+
+
+            /* button rules*/
+
+.btn-div{
+  display: grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap: 1rem;
+  margin: 6.6%;
+   margin: 5% 2%;
+  width: 97%;
+}
+
+.btns{
+  width: 100%;
+  height: 65px;
+  font-size: medium;
+  font-weight : 900;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px -8px #c4c4c4;
+   color: #50505e
+}
+
+
+.btns:active{
+   box-shadow: inset 0px 8px 15px -8px #c4c4c4;
+}
+
+.clear{
+  border: 1px 5px solid;
   color: white;
+  font-size: x-large;
+  background-color: #9b9bab;
+  
+  grid-column:  span 2;
 }
 
-.App-link {
-  color: #61dafb;
+.clear:active{
+   box-shadow: inset 0px 8px 15px -8px #626060;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.equals{
+  color: white;
+  font-size: x-large;
+  background-color: #7ba79a;
+  grid-column: span 2;
+}
+
+.equals:active{
+   box-shadow: inset 0px 8px 15px -8px #566764;
+}
+
+h5{
+  text-align: center;
+  opacity:.9;
 }
